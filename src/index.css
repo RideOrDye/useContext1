@@ -65,6 +65,10 @@ cursor:pointer;
  
 }
 
+.outer-div{
+  background-color: white;
+}
+
 
 .header nav {
   display: none;

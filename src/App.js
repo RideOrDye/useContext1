@@ -6,16 +6,19 @@ import Footer from './components/Footer';
 import CreationsDesktop from './components/CreationsDesktop'
 
 
+
+
 const App = () => {
   return (
     <>
-    <Header/>
-    <Showcase />
-    <Interactive/>
-    <CreationsMobile/>
-    <CreationsDesktop/>
-    <Footer/>
+      <Header/>
+      <Showcase />
+      <Interactive/>
+      <CreationsMobile/>
+      <CreationsDesktop/>
+      <Footer/>
     </>
+ 
   );
 }
 

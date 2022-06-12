@@ -1,8 +1,12 @@
 import React from 'react'
 import logo from '../images/logo.svg'
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import About from './About.js';
+
 
 const Header = () => {
     return(
+      <Router>
         
         <header className="header">
             <div className="logo">
@@ -11,11 +15,24 @@ const Header = () => {
             
           <nav>
               <ul>
-                  <li><button>About</button></li>
-                  <li><button>Careers</button></li>
-                  <li><button>Events</button></li>
-                  <li><button>Products</button></li>
-                  <li><button>Support</button></li>
+                  <li>
+                  <Link to="/About">  About </Link>
+                 </li>
+                   
+                  <li>
+                    <Link to="/">Careers </Link>
+                  </li>
+
+                  <li>
+                  <Link to="/"> Events</Link>
+                    </li>
+                  <li>
+                  <Link to="/">  Products </Link>
+                    </li>
+                  <li>
+                  <Link to="/"> Support </Link>
+                   </li>
+  
               </ul>
           </nav>
 
@@ -25,7 +42,13 @@ const Header = () => {
         <div className="bar bar2"></div>
         <div className="bar bar3"></div>
         </div>
+        <div>
+          <Switch>
+            <Route exact path="/about" component={About} />
+          </Switch>
+        </div>
       </header>
+      </Router>
     )
 }
 
