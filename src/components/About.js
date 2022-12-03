@@ -1,16 +1,19 @@
 import React from 'react'
-import interactiveImg from '../images/desktop/image-interactive.jpg';
 import "../index.css"
-import aboutvideo1 from './videos/aboutvideo1.mp4'
+import lighttunnel from './videos/lighttunnel.mp4'
 
 
 const About = () => {
   
     return (
         <div class="outer-div">
-            <p>TEST</p>
-            <img src={interactiveImg} alt="" />
-            <video src={aboutvideo1} width="600" height="300" controls="controls" muted loop autoplay="true" type="mp4" />
+            <div class="overlay"></div>
+            <video class="tunnel-vid" width="100vw" height="100vh"  muted loop autoplay="true" type="mp4">
+                 <source src={lighttunnel} type="video/mp4" />
+            </video>
+
+            
+           
         </div>
      
 
