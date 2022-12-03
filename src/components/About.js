@@ -1,13 +1,16 @@
 import React from 'react'
 import interactiveImg from '../images/desktop/image-interactive.jpg';
-import {Link} from 'react-router-dom'
+import "../index.css"
+import aboutvideo1 from './videos/aboutvideo1.mp4'
+
 
 const About = () => {
   
     return (
         <div class="outer-div">
-             <Link to="/Header"> Back to Home </Link>
-              <img src={interactiveImg} alt="" />
+            <p>TEST</p>
+            <img src={interactiveImg} alt="" />
+            <video src={aboutvideo1} width="600" height="300" controls="controls" muted loop autoplay="true" type="mp4" />
         </div>
      
 

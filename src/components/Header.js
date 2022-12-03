@@ -1,13 +1,12 @@
 import React from 'react'
 import logo from '../images/logo.svg'
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
-import About from './About.js';
-
+import { Link } from 'react-router-dom'
+import '../index.css'
+import { Outlet} from "react-router-dom";
 
 const Header = () => {
     return(
-      <Router>
-        
+      <>
         <header className="header">
             <div className="logo">
                 <img src={logo} alt=""/>
@@ -16,7 +15,7 @@ const Header = () => {
           <nav>
               <ul>
                   <li>
-                  <Link to="/About">  About </Link>
+                   <Link to="/about">About </Link>
                  </li>
                    
                   <li>
@@ -41,14 +40,10 @@ const Header = () => {
         <div className="bar bar1"></div>
         <div className="bar bar2"></div>
         <div className="bar bar3"></div>
-        </div>
-        <div>
-          <Switch>
-            <Route exact path="/about" component={About} />
-          </Switch>
+         <Outlet />
         </div>
       </header>
-      </Router>
+      </>
     )
 }
 

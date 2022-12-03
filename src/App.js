@@ -1,25 +1,22 @@
+
+import * as React from "react";
+import AppRouter from "./AppRouter";
+import "./index.css"
 import Header from './components/Header'
-import Showcase from './components/Showcase';
-import CreationsMobile from './components/CreationsMobile';
-import Interactive from './components/Interactive';
-import Footer from './components/Footer';
-import CreationsDesktop from './components/CreationsDesktop'
+import Footer from './components/Footer'
 
-
-
-
-const App = () => {
+export default function App() {
   return (
     <>
-      <Header/>
-      <Showcase />
-      <Interactive/>
-      <CreationsMobile/>
-      <CreationsDesktop/>
+      <Header />
+      <AppRouter />
       <Footer/>
     </>
- 
-  );
+  )
+
+
 }
 
-export default App;
+
+
+    
