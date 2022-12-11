@@ -1,26 +1,39 @@
+@import url('https://fonts.google.com/specimen/Alfa+Slab+One?utm_source=developers.google.com&utm_medium=referral');
 
 
 .header {
-    position: absolute;
+    position: sticky;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    background-color: plum;
 
 
 }
 
 
-.header nav {
-    /* display: none; */
-    position: absolute;
+.header nav li a {
+    position: sticky; 
+    font-family: 'Archivo Black';
+    text-decoration: none;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: black;
-    min-height: 100vh;
+    color: aliceblue;
 }
+
+.header_logo{
+    font-family: 'Archivo Black';
+    color: aliceblue;
+    padding-right: 5px;
+    font-size: 20px;
+    font-weight:bold;
+
+}
+
+
 
 
 .header .menu-btn {

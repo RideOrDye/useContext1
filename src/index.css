@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
+
 :root{
 
 --white: hsl(0, 0%, 100%);
@@ -65,7 +66,7 @@ height:700px
 }
 
 
-.showcase .overlay {
+.showcase .showcase_overlay {
 display:flex;
 align-items: center;
 height:700px;
@@ -73,7 +74,7 @@ padding: 0 20px;
 
 }
 
-.showcase .overlay h1{
+.showcase .showcase_overlay h1{
   color:aliceblue;
   font-size:46px;
   line-height: 1.1;
