@@ -1,0 +1,51 @@
+
+
+.header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+
+}
+
+
+.header nav {
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    min-height: 100vh;
+}
+
+
+.header .menu-btn {
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.header .menu-btn.rotate .bar-1 {
+    transform: rotate(40deg);
+}
+
+.header .menu-btn.rotate .bar-2 {
+    opacity: 0;
+}
+
+.header .menu-btn.rotate .bar-3 {
+    transform: rotatate(-40deg);
+    margin-top: -16px;
+
+}
+
+.header .menu-btn .bar {
+    width: 35px;
+    height: 3px;
+    background-color: #fff;
+    margin: 0 0 5px;
+}
