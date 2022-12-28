@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect, useState, useRef } from 'react'
 import "../index.css"
 import lighttunnel from './videos/lighttunnel.mp4'
+import whiteheadset from '../images/desktop/'
 
 
 const About = () => {
@@ -29,6 +30,7 @@ const About = () => {
             <div class="cyberdiv">
                 <p>CYBER EXPERIENCE</p>
             </div>
+
             {/* if href =
             'http://localhost:3000/about' dont show about link  */}
 

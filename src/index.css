@@ -218,47 +218,7 @@ padding: 0 20px;
     display: flex;
   }
 }
-@media (min-width: 1024px) {
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px 30px;
-  }
 
-  .header .menu-btn {
-    display: none;
-  }
-
-  .header nav {
-    display: block;
-    background-color: transparent;
-  }
-
-  .header nav .nav-logo {
-    display: none;
-  }
-
-  .header nav ul {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    top: 20px;
-    right: 30px;
-    padding: 0;
-  }
-
-  .header nav ul li {
-    margin-bottom: 0;
-    margin-right: 20px;
-  }
-
-  .header nav ul li button {
-    text-transform: capitalize;
-    font-size: 18px;
-  }
-
-}
 @media (min-width:992px){
 
   .interactive{
