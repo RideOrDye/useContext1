@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Header/Header.css'
-// import logo from '../..images/mobile/logo.svg'
+// import logo from '../../images/mobile/'
 import { Link } from 'react-router-dom'
 import { Outlet } from "react-router-dom";
 import '../..'
@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <>
       <header className="header">
-        <div className="logo">
+        <div className="header_logo">Loop Studios
           {/* <img src={logo} alt="" /> */}
         </div>
 
@@ -21,7 +21,7 @@ const Header = () => {
             </li>
 
             <li>
-              <Link to="/">Careers </Link>
+              <Link to="/games">Games </Link>
             </li>
 
             <li>
