@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect, useState, useRef } from 'react'
 import "../index.css"
 import lighttunnel from './videos/lighttunnel.mp4'
-import whiteheadset from '../images/desktop/'
+
 
 
 const About = () => {
