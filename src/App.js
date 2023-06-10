@@ -7,11 +7,11 @@ import Footer from './components/Footer'
 
 export default function App() {
   return (
-    <>
+    <div class="App">
       <Header />
       <AppRouter />
       <Footer />
-    </>
+    </div>
   )
 
 

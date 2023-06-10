@@ -2,7 +2,8 @@ import React from 'react'
 import { useEffect, useState, useRef } from 'react'
 import "../index.css"
 import lighttunnel from './videos/lighttunnel.mp4'
-
+import whiteheadset from '../assets/images/desktop/whiteheadset.jpg'
+import blackheadset from '../assets/images/desktop/blackheadset.jpg'
 
 
 const About = () => {
@@ -29,6 +30,8 @@ const About = () => {
             </video>
             <div class="cyberdiv">
                 <p>CYBER EXPERIENCE</p>
+                <img src={whiteheadset} />
+                <img src={blackheadset} width='305' height='165' />
             </div>
 
             {/* if href =

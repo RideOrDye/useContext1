@@ -1,0 +1,116 @@
+
+.carcruising{
+        position:absolute;
+        left: 300px;
+        top:400px;
+        width: 500px;
+        display: flex;   
+}
+
+
+.nftpic{
+    object-fit: cover;
+    width: 100%;
+    
+}
+
+
+
+.games_intro {
+    color:aliceblue;
+    position: absolute;
+    bottom: 7rem;
+    width: 500px;
+    height: 250px;
+    right: 250px;
+    top: 400px; 
+    line-height:30px;
+    background-color: blue;
+    
+}
+
+ /* .grid_section{
+    display: block;
+}  */
+
+@media (min-width: 50em) {
+    .parent_grid  {
+        grid-template-areas:
+            'one one'
+             'two five'
+            'three four four five'
+    }
+}
+
+@media (min-width: 30em) {
+    .parent_grid  {
+        grid-template-areas:
+            'one one'
+            'two five'
+            'three five'
+            'four four'
+    }
+}
+
+
+
+.grid-col-span-2 {
+    grid-column: span 2;
+
+}
+
+.item_1 {
+    grid-area: box1;
+}
+
+.item_2 {
+    grid-area: box2;
+}
+
+.item_3 {
+    grid-area: box3;
+}
+
+.item_4 {
+    grid-area: box4;
+}
+
+.item_5 {
+    grid-area: box5;
+}
+
+.item_6 {
+    grid-area: box6;
+}
+
+.parent_grid{
+    display: grid; 
+    gap: 1.5rem;
+    grid-template-areas:
+    'box1 box2 box2 box3'
+    'box1 box4 box4 box3'
+    'box5 box5 box6 box6';
+    
+
+} 
+
+
+.flex {
+    display: flex;
+}
+
+.flow>*:where(:not(:first-child)) {
+    margin-top: var(--flow-spacer, 1em);
+}
+
+article{
+    font-size: var(--fs-400);
+    padding:2rem;
+    border-radius: 0.5rem;
+    box-shadow: 2.5rem 3.75rem 3rem;
+}
+
+.parent_grid : :last-child {
+    grid-column-start: 4;
+    grid-row: 1/ span 2; 
+}

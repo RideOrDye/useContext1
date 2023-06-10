@@ -18,6 +18,14 @@
   
 }
 
+/* div{
+  display: inline;
+} */
+
+.App{
+  display: flex;
+  flex-direction: column;
+}
 
 ul {
   list-style-type: none;
@@ -58,7 +66,7 @@ cursor:pointer;
 
 
 .showcase {
-background: url('./images/mobile/image-hero.jpg');
+background: url('./assets/images/mobile/image-hero.jpg');
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
@@ -161,6 +169,9 @@ padding: 0 20px;
   color: #fff;
   padding: 50px 0;
   text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100vw;
   z-index: 2;
 }
 
@@ -279,7 +290,7 @@ padding: 0 20px;
 }
 @media (min-width: 1024px) {
   .showcase {
-    background: url('./images/desktop/image-hero.jpg');
+    background: url('./assets/images/desktop/image-hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -331,6 +342,7 @@ padding: 0 20px;
 
   .footer{
     padding:50px 150px;
+    margin-top:auto;
   }
 }
 
@@ -363,7 +375,7 @@ object-fit: cover;
 
 }
 
- /* .overlay {
+ .overlay {
   position:absolute;
   top:0;
   left:0;
@@ -373,4 +385,4 @@ object-fit: cover;
   
 
 
-}  */
+}  
